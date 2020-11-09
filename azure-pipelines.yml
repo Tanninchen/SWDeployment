@@ -18,6 +18,7 @@ steps:
 
 - script: |
     npm install --only=dev
-    install --global mocha
+    npm install -g mocha-junit-reporter
+    mocha test --reporter mocha-junit-reporter
   displayName: 'npm install'
 

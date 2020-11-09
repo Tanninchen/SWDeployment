@@ -18,6 +18,13 @@ steps:
 
 - script: |
     npm install --only=dev
+    npx mocha
     mocha test --reporter mocha-junit-reporter
+    npm install -g @angular/cli
   displayName: 'npm install'
 
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: '**/TEST-RESULTS.xml'

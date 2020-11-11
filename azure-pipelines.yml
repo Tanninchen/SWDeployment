@@ -17,12 +17,12 @@ steps:
 
 
 - script: |
-    npm install --only=dev
+    npm install 
     npx mocha
     mocha test --reporter mocha-junit-reporter
     npm install -g @angular/cli
     npm install mocha chai nock --save-dev
-    npm install --svae axios
+    npm install --save axios
   displayName: 'npm install'
 
 - task: PublishTestResults@2

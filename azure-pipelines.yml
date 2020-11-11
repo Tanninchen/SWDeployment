@@ -24,7 +24,7 @@ steps:
     ./node_modules/.bin/mocha
     npm test
   displayName: 'npm install, test'
-  workingDirectory: '$(Build.SourceDirectory)/swDeploy_Web-app'
+  workingDirectory: '$(Build.SourcesDirectory)/swDeploy_Web-app'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()

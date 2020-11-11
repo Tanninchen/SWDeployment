@@ -23,7 +23,6 @@ steps:
     npm i -g mocha
     npm install -g @angular/cli
     ./node_modules/.bin/mocha
-    mocha test --reporter mocha-junit-reporter
     npm test
   displayName: 'npm install, test'
   workingDirectory: '$(Build.SourcesDirectory)/swDeploy_Web-app'

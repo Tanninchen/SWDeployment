@@ -20,7 +20,6 @@ steps:
     npm install 
     npx mocha
     npm i -g mocha
-    mocha test --reporter mocha-junit-reporter
     npm install -g @angular/cli
     ./node_modules/.bin/mocha
     npm test
@@ -30,6 +29,6 @@ steps:
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testRunner: JUnit
-    testResultsFiles: '**/TEST-RESULTS.xml'
+    testRunner: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'

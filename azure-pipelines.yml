@@ -33,3 +33,11 @@ steps:
     testRunner: 'JUnit'
     testResultsFiles: '**/TEST-RESULTS.xaml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'azure_rm_connection'
+    appType: 'webApp'
+    WebAppName: 'swDepylomentApp'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'

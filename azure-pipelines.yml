@@ -23,7 +23,6 @@ steps:
     npm install -g @angular/cli
     npm install mocha chai nock --save-dev
     npm install --svae axios
-    ./node_modules/.bin/mocha test
   displayName: 'npm install'
 
 - task: PublishTestResults@2

@@ -30,8 +30,8 @@ steps:
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testRunner: 'JUnit'
-    testResultsFiles: '**/TEST-RESULTS.xaml'
+    testRunner: JUnit
+    testResultsFiles: '**/test_Results.xml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'
 
     

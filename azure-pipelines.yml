@@ -21,9 +21,9 @@ steps:
     npx mocha
     mocha test --reporter mocha-junit-reporter
     npm install -g @angular/cli
-    npm install mocha chai nock --save-dev
-    npm install --save axios
-  displayName: 'npm install'
+    ./node_modules/.bin/mocha
+    npm test
+  displayName: 'npm install, test'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()

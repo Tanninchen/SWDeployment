@@ -34,10 +34,11 @@ steps:
     testResultsFiles: '**/TEST-RESULTS.xaml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'
 
-- task: AzureRmWebAppDeployment@4
+    
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'azure_rm_connection'
+    azureSubscription: 'Azure für Bildungseinrichtungen(3813678f-1541-4ef4-a3f4-a21efebe0802)'
     appType: 'webApp'
-    WebAppName: 'swDepylomentApp'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
+    appName: 'SWWebApp2'
+    package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
+    deploymentMethod: 'auto'

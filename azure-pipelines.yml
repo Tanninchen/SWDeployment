@@ -31,5 +31,5 @@ steps:
   condition: succeededOrFailed()
   inputs:
     testRunner: 'JUnit'
-    testResultsFiles: '**/TEST-RESULTS.xml'
+    testResultsFiles: '**/TEST-RESULTS.xaml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'

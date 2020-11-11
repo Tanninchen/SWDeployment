@@ -19,6 +19,7 @@ steps:
 - script: |
     npm install 
     npx mocha
+    npm i -g mocha
     mocha test --reporter mocha-junit-reporter
     npm install -g @angular/cli
     ./node_modules/.bin/mocha

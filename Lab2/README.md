@@ -24,4 +24,4 @@ Das Artefact welches vorher produziert wurde, wurde der Release Pipleine hinzuge
 
 
 ## Appilkation Insights:
-![Release Pipeline manuel](Screenshots/ApplicationInsightse.PNG)
+![Release Pipeline manuel](Screenshots/ApplicationInsights.PNG)

@@ -2,6 +2,12 @@
 
 ## Link Azure Web App
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+### erfolgreiche Deployements
+![Alt text](Test_Run.PNG )
+
+
+### nicht erfolgreiche Deployements
+
+![Screenshot](/Screenshoots/Test_Run.PNG)
 
 ## Releases Freigabe:

@@ -8,6 +8,6 @@
 
 ### nicht erfolgreiche Deployements
 
-![ScreenShot](/Screenshoots/Test_Run.PNG "Optional Title")
+![Screenshot](/Screenshoots/Test_Run.PNG)
 
 ## Releases Freigabe:

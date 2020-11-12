@@ -44,4 +44,4 @@ steps:
     appType: 'webApp'
     appName: 'SWWebApp2'
     package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
-    deploymentMethod: 'auto'
+    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'

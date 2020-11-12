@@ -5,12 +5,12 @@
 https://swwebapp2.azurewebsites.net/
 
 ### erfolgreiche Deployements
-![Alt text](Test_Run.PNG )
+![Alt text]((Screenshots/Test_Run.PNG)
 
 
 ### nicht erfolgreiche Deployements
 
-![Screenshot](Screenshoots/Test_Run.PNG)
+![Screenshot](Screenshots/Test_Run.PNG)
 
 ## Releases Freigabe:
 Für die Release Pipeline wurde das Template 'Azure App Service deployment with continuous monitoring' ausgewählt, danach wurden die Post- und Pre-Conditions eingestellt.

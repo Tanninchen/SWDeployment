@@ -8,7 +8,7 @@ https://swwebapp2.azurewebsites.net/
 
 ### erfolgreiches Deployement
 
-![Test/Build failed]((Screenshots/TstFailed.PNG)
+![Test/Build failed](Screenshots/TstFailed.PNG)
 
 
 ### nicht erfolgreiches Deployement

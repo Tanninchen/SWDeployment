@@ -45,3 +45,9 @@ steps:
     appName: 'SWWebApp2'
     package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
     customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

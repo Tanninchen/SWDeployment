@@ -34,11 +34,14 @@ steps:
     testResultsFiles: '$(Build.SourcesDirectory)/swDeploy_Web-app/test_Results.xml'
     searchFolder: '$(Build.SourcesDirectory)/swDeploy_Web-app'
 
-    
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
+
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure für Bildungseinrichtungen(3813678f-1541-4ef4-a3f4-a21efebe0802)'
     appType: 'webApp'
     appName: 'SWWebApp2'
     package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
-    deploymentMethod: 'auto'
+    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'

@@ -19,10 +19,6 @@ steps:
 - script: |
     npm install 
     npm run build
-    npx mocha
-    npm i -g mocha
-    npm install -g @angular/cli
-    ./node_modules/.bin/mocha
     npm test
   displayName: 'npm install, test'
   workingDirectory: '$(Build.SourcesDirectory)/swDeploy_Web-app'
@@ -46,4 +42,4 @@ steps:
     appType: 'webApp'
     appName: 'SWWebApp2'
     package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
-  
+    customWebConfig: '-Handler iisnode -NodeStartFile app.js -appType node'

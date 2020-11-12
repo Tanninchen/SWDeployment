@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./index.test.js"
+    "test": "mocha test --reporter mocha-junit-reporter",
+    "build": ""
   },
   "author": "",
   "license": "ISC",

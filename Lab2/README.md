@@ -2,7 +2,9 @@
 
 ## Link Azure Web App
 
-https://swwebapp2.azurewebsites.net/
+Dep: https://swwebapp2.azurewebsites.net/
+
+Release: https://swdepreleasewebapp.azurewebsites.net/
 
 ## Screenhots zu Deployments
 
@@ -25,3 +27,7 @@ Das Artefact welches vorher produziert wurde, wurde der Release Pipleine hinzuge
 
 ## Appilkation Insights:
 ![Release Pipeline manuel](Screenshots/ApplicationInsights.PNG)
+
+![Succeed](Screenshots/Succeed.PNG)
+
+![Approve](Screenshots/Approve.PNG)

@@ -22,3 +22,6 @@ Das Artefact welches vorher produziert wurde, wurde der Release Pipleine hinzuge
 ![Release Pipeline manuel](Screenshots/ManuelRelease.PNG)
 ![Release succed](Screenshots/RealeseSucced.PNG)
 
+
+## Appilkation Insights:
+![Release Pipeline manuel](Screenshots/ApplicationInsights.PNG)

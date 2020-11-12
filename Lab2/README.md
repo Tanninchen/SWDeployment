@@ -3,7 +3,7 @@
 ## Link Azure Web App
 
 ### erfolgreiche Deployements
-![Alt text](/Screenshoots/Test_Run.PNG "Optional Title")
+![Alt text](Test_Run.PNG )
 
 
 ### nicht erfolgreiche Deployements

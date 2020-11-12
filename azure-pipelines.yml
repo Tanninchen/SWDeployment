@@ -37,6 +37,8 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: AzureWebApp@1
   inputs:
@@ -44,10 +46,4 @@ steps:
     appType: 'webApp'
     appName: 'SWWebApp2'
     package: '$(System.DefaultWorkingDirectory)/swDeploy_Web-app'
-    customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+  

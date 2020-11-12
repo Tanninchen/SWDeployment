@@ -4,12 +4,14 @@
 
 https://swwebapp2.azurewebsites.net/
 
-### erfolgreiche Deployements
+## Screenhots zu Deployments
+
+### erfolgreiches Deployement
 
 ![Test/Build failed]((Screenshots/TstFailed.PNG)
 
 
-### nicht erfolgreiche Deployements
+### nicht erfolgreiches Deployement
 
 ![Test/Build success](Screenshots/Test_Run.PNG)
 
@@ -19,4 +21,4 @@ Das Artefact welches vorher produziert wurde, wurde der Release Pipleine hinzuge
 
 ![Release Pipeline manuel](Screenshots/ManuelRelease.PNG)
 ![Release succed](Screenshots/RealeseSucced.PNG)
-![Release succed](Screenshots/ReleasePipeline.PNG)
+

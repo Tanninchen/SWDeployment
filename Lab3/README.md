@@ -15,3 +15,11 @@ docker-compse down --volumes -> entfernt den container, default network & die Wo
 # Teil 2
 
 ## Vorgehensweise
+
+Für beide Images ein Dockerfile anlegen -> code Dockerfile
+
+
+### Apchae + PHP + Wordpress
+
+
+### MySQL

@@ -1,13 +1,18 @@
 FROM debian:jessie
 
+RUN apt-get update && apt-get install  php-curl php-gd php-mbstring php-mcrypt php-xml php-xmlrpc
 
-FROM wordpress:php7.1-apache 
+RUN apt-get update && apt-get install apache2
+
+RUN apt-get update && apt-get install mysql-server
+
+
+
+
+RUN cd /var/www/html/
+
+
 COPY . /var/www/html
-
-RUN apt-get clean
-RUN apt-get update
-RUN apt-get install apache2
-RUN apt-get install php-curl php-gd php-mbstring php-mcrypt php-xml php-xmlrp
 
 
 RUN apt-get install all_my_dependencies

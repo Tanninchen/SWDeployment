@@ -16,3 +16,52 @@ Each instruction creates one layer:
     CMD specifies what command to run within the container.
 
 Only the instructions RUN, COPY, ADD create layers
+
+----------
+
+LAMP- Stack -> Gruppe von open source sw, die normalerweise zusammen installiert werden, damit ein Server dynamische Websites und Web-Apps hosten kann. (Apche,PHP,MySQL)
+-> Akronym, das Linux BS mit dem Apache-Webserver darstellt. die site daten werden in einer MYSql DB gesoecihert & dynamischer Inhalt wird von PHP verarbeitet. 
+
+--------
+wordpress
+Voraussetzungen:
+- sudo benutzer auf Server
+- LAMP Stack installieren 
+(- seite mit SSL sichern.)
+
+1.Step
+-
+-> sudo anmelden
+-> MySQL DB erstellen & User user füe wordpress
+-> sepetrat DB die Wordpress steuern eknn
+-> seperates mySQL-Benuterkonto, aussließlich für den Betrieb der neuen DB
+
+
+2.Step
+- PHP Extensions installieren
+- Apache neu starten
+
+
+3.Step
+[ausgelassen]
+- apache config anpassen
+
+4.Step
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,7 +18,9 @@ docker-compse down --volumes -> entfernt den container, default network & die Wo
 
 Für beide Images ein Dockerfile anlegen -> code Dockerfile
 Individuelle Befehle in Dockerfile angeben.
-
+-> alle benötigten Anweisungen in docker-compose.
+docker-compose build -> to build unsere custom image
+docker-compose up -> to run unser custom image
 
 ### Apchae + PHP + Wordpress
 

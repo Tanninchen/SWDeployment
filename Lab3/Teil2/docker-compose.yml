@@ -3,7 +3,7 @@ version: '3.3'
 
 services:
   db:
-    image: tanninchen/MySQL
+    image: tanninchen/mysql
     ports:
       - "3306:3306"
     restart: always
@@ -20,7 +20,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: tanninchen/WordPress
+    image: tanninchen/wordpress
     ports:
       - "8000:80"
     volumes: 

@@ -4,7 +4,7 @@ FROM debian:jessie
 ENV DB_NAME=wordpressdb
 ENV DB_User=tanja
 ENV DB_PASSWORD=password123
-ENV ACCEPT_EULA=Y
+#ENV ACCEPT_EULA=Y
 
 #install apache 
 RUN sudo apt-get update & install apache2

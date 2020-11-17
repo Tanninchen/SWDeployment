@@ -55,6 +55,7 @@ COPY docker-entrypoint.sh docker-entrypoint.sh
 RUN mv /usr/share/wordpress/wp-config-sample.php /etc/wordpress/config-localhost.php
 RUN cp -R /usr/share/wordpress/*  /var/www/html/
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+CMD DB_NAME=${DB_NAME} DB_USER=${DB_USER} DB_PASSWORD=${DB_PASSWORD} DB_HOST=${DB_HOST}
+ENTRYPOINT ./docker-entrypoint.sh
 # Port from Container
 EXPOSE 80

@@ -45,7 +45,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 #RUN mysql -u root -p
 COPY docker-entrypoint.sh docker-entrypoint.sh
 COPY install.sh install.sh
-COPY dataTable.sql /docker-initdb-dataTable.d
+COPY dataTable.sql /docker-initdb-dataTable.d/
 RUN ./install.sh
-ENTRYPOINT ["docker-entrypoint.sh"]
-EXPOSE 3306
+CMD DB_NAME=${DB_NAME} DB_USER=${DB_USER} DB_PASSWORD=${DB_PASSWORD}
+ENTRYPOINT ./docker-entrypoint.sh
+EXPOSE 8080

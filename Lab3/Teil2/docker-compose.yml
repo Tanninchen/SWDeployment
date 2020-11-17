@@ -1,11 +1,10 @@
 version: '3.3'
 
-
 services:
   db:
-    image: sql
+    image: sqltanja
     ports:
-      - "3306:3306"
+      - "8080:8080"
     restart: always
     environment:
       DB_User: wordpressuser
@@ -20,9 +19,9 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress_
+    image: wordpresstanja
     ports:
-      - "8000:80"
+      - "80:80"
     volumes: 
      - type: volume
        source: wpuploads 
@@ -32,7 +31,7 @@ services:
        target: /etc/wordpress/
     restart: always
     environment:
-      DB_HOST: db:3306
+      DB_HOST: db:8080
       DB_User: wordpressuser
       DB_PASSWORD: wordpresspw
       DB_NAME: wordpress

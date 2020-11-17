@@ -7,6 +7,7 @@ ENV DB_PASSWORD=password123
 #ENV ACCEPT_EULA=Y
 
 #install apache 
+
 RUN sudo apt-get update & install apache2
 
 # apache config zeile hinzufügen um Warning zu unterdrücken
@@ -18,9 +19,9 @@ RUN  sudo systemctl restart apache2
 
 # eingehenden Datenverkehr zulassen
 RUN sudo ufw allow in "Apache Full"
-
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 # danach wird aufgefordert Kennwort für sql root benutzer
-RUN apt-get install & update mysql-server
+#RUN apt-get install & update mysql-server
 
 #simple security script , danach pw eingeben
 # nein um fortzufahren

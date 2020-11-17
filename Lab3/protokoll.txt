@@ -47,7 +47,12 @@ Voraussetzungen:
 - apache config anpassen
 
 4.Step
+- worpress installieren
+-configurationen vornehmen
+- verzeichnisse kopieren/verschieben
 
+5.Step
+- 
 
 
 

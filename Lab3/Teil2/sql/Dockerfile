@@ -43,5 +43,5 @@ RUN mysql -u root -p
 COPY docker-entrypoint.sh docker-entrypoint.sh
 COPY install.sh install.sh
 COPY dataTable.sql /docker-initdb-dataTable.d
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
 EXPOSE 3306

@@ -24,7 +24,7 @@
     kubectl apply -f /home/buczkowski/wordpress.yaml
 
 
-- wordpress ist nun über die 'External-IP' erreichbar [51.105.239.197]  (51.105.239.197)
+- wordpress ist nun über die 'External-IP' erreichbar [51.105.239.197]  (http://51.105.239.197/)
 
 ![Wordpress is Running](Screenshots/WordpressLab4.PNG)
 ![Wordpress default page](Screenshots/WordpressDefaultRunnung.PNG)

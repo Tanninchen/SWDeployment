@@ -18,3 +18,13 @@
     -> Azure CLI -> kubectl create secret generic mysql-pass --from-literal=password=password123
 
 - Upoad mysql & wordpress in Azure clouddrive
+- create mySQL Pod and Service 
+    kubectl apply -f /home/buczkowski/mysql.yaml
+- create wordpress pod and Service
+    kubectl apply -f /home/buczkowski/wordpress.yaml
+
+
+- wordpress ist nun über die 'External-IP' erreichbar [51.105.239.197]  (51.105.239.197)
+
+![Wordpress is Running](Screenshots/WordpressLab4.PNG)
+![Wordpress default page](Screenshots/WordpressDefaultRunnung.PNG)

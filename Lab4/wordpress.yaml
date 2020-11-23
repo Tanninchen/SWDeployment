@@ -1,3 +1,4 @@
+#Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -12,6 +13,7 @@ spec:
     tier: frontend
   type: LoadBalancer
 ---
+#Volume
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -25,7 +27,8 @@ spec:
     requests:
       storage: 20Gi
 ---
-apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+# Deployment
+apiVersion: apps/v1 
 kind: Deployment
 metadata:
   name: wordpress
